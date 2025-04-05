@@ -8,6 +8,9 @@ const signin = () => {
     <SafeAreaView className='bg-white h-full'>
       <ScrollView contentContainerClassName='h-full'>
         <Image source={images.onboarding} className='w-full h-4/6' resizeMode='contain'/>
+        <View>
+          <Text>Welcome to Homifi</Text>
+        </View>
       </ScrollView>
     </SafeAreaView>
   )
