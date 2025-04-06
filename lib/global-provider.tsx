@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, ReactNode } from "react";
 
 import { getCurrentUser } from "./appwrite";
@@ -35,8 +34,6 @@ export const GlobalProvider = ({ children }: GlobalProviderProps) => {
   });
 
   const isLogged = !!user;
-
-  console.log(JSON.stringify(user));
 
   return (
     <GlobalContext.Provider
