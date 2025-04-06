@@ -12,6 +12,7 @@ export default function Index() {
       }}
     >
       <Text className="font-bold text-3xl my-10 font-rubik">Welcome to Homifi</Text>
+        <Link href="/signin">Signin</Link>
         <Link href="/explore">Explore</Link>
         <Link href="/profile">Profile</Link>
         <Link href="/properties/1">Property</Link>
