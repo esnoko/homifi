@@ -34,6 +34,7 @@ export const GlobalProvider = ({ children }: GlobalProviderProps) => {
   });
 
   const isLogged = !!user;
+  console.log(JSON.stringify(user));
 
   return (
     <GlobalContext.Provider
