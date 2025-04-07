@@ -24,6 +24,9 @@ const profile = () => {
             <TouchableOpacity className='absolute bottom-11 right-2'>
               <Image source={icons.edit} className='size-9'/>
             </TouchableOpacity> 
+            <Text className='text-2xl font-rubik-bold mt-2'>
+              NokoDev | ELNO
+            </Text>
           </View>
         </View>
       </ScrollView>
