@@ -3,21 +3,23 @@ import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import icons from "@/constants/icons";
 import images from "@/constants/images";
+import { settings } from "@/constants/data";
 
 interface SettingsItemProps{
   icon: ImageSourcePropType;
-  title: string;
+  title?: string;
   onPress: () => void;
   textStyle?: string;
   showArrow?: boolean;
 }
 
 const SettingsItem = ({icon, title, onPress, textStyle, showArrow= true}: SettingsItemProps) => (
-  <TouchableOpacity>
-    <View>
-      <Image source={icon}/>
-      <Text>{title}</Text>
+  <TouchableOpacity onPress={onPress} className="flex flex-row items-center justify-between py-3">
+    <View className="flex flex-row items-center gap-3">
+      <Image source={icon} className="size-6"/>
+      <Text className={`text-lg font-rubik-medium text-black-300 ${textStyle}`}>{title}</Text>
     </View>
+    {showArrow && <Image source={icons.rightArrow} className="size-4"/>}
   </TouchableOpacity>
 )
 
@@ -46,8 +48,23 @@ const profile = () => {
               NokoDev | ELNO
             </Text>
           </View>
-          <View className="flex flex-col mt-10"></View>
         </View>
+        <View className="flex flex-col mt-10">
+            <SettingsItem icon={icons.calendar} title="My Bookings" onPress={function (): void {
+            throw new Error("Function not implemented.");
+          } }></SettingsItem>
+            <SettingsItem icon={icons.wallet} title="Payments" onPress={function (): void {
+            throw new Error("Function not implemented.");
+          } }></SettingsItem>
+          </View>
+
+          <View className="flex flex-col mt-5 border-t pt-5 border-primary-200">
+            {settings.slice(2).map((item, index) =>(
+              <SettingsItem onPress={function (): void {
+                throw new Error("Function not implemented.");
+              } } key={index} {...item}/>
+            ))}
+          </View>
       </ScrollView>
     </SafeAreaView>
   );
