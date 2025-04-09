@@ -24,6 +24,10 @@ const SettingsItem = ({icon, title, onPress, textStyle, showArrow= true}: Settin
 )
 
 const profile = () => {
+  function handleLogout(): void {
+    throw new Error("Function not implemented.");
+  }
+
   return (
     <SafeAreaView className="h-full bg-white">
       <ScrollView
@@ -64,6 +68,10 @@ const profile = () => {
                 throw new Error("Function not implemented.");
               } } key={index} {...item}/>
             ))}
+          </View>
+          
+          <View>
+            <SettingsItem icon={icons.logout} title="Logout" textStyle="text-danger" showArrow={false} onPress={handleLogout}/>
           </View>
       </ScrollView>
     </SafeAreaView>
