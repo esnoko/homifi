@@ -59,24 +59,18 @@ const profile = () => {
               <Image source={icons.edit} className="size-9" />
             </TouchableOpacity>
             <Text className="text-2xl font-rubik-bold mt-2">
-              NokoDev | ELNO
+              {user?.name}
             </Text>
           </View>
         </View>
         <View className="flex flex-col mt-10">
-            <SettingsItem icon={icons.calendar} title="My Bookings" onPress={function (): void {
-            throw new Error("Function not implemented.");
-          } }></SettingsItem>
-            <SettingsItem icon={icons.wallet} title="Payments" onPress={function (): void {
-            throw new Error("Function not implemented.");
-          } }></SettingsItem>
+            <SettingsItem icon={icons.calendar} title="My Bookings"></SettingsItem>
+            <SettingsItem icon={icons.wallet} title="Payments"></SettingsItem>
           </View>
 
           <View className="flex flex-col mt-5 border-t pt-5 border-primary-200">
             {settings.slice(2).map((item, index) =>(
-              <SettingsItem onPress={function (): void {
-                throw new Error("Function not implemented.");
-              } } key={index} {...item}/>
+              <SettingsItem key={index} {...item}/>
             ))}
           </View>
           
