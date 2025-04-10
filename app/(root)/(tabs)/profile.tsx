@@ -74,7 +74,7 @@ const profile = () => {
             ))}
           </View>
           
-          <View>
+          <View className="flex flex-col mt-5 border-t pt-5 border-primary-200">
             <SettingsItem icon={icons.logout} title="Logout" textStyle="text-danger" showArrow={false} onPress={handleLogout}/>
           </View>
       </ScrollView>
