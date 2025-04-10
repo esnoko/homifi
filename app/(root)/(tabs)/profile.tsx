@@ -31,7 +31,6 @@ const profile = () => {
   const handleLogout = async () => {
     const result = await logout();
     if (result) {
-      Alert.alert("Success", "Logged out successfully");
       refetch();
     } else {
       Alert.alert("Error", "Failed to logout");
