@@ -19,7 +19,12 @@ export const FeaturedCards = ({onPress}: Props) => {
 
         <View className='flex flex-col items-start absolute bottom-5 inset-x-5'>
             <Text className='text-xl font-rubik-extrabold text-white' numberOfLines={1}>Modern Apartment</Text>
-            <Text className='text-base font-rubik text-white'>24 Market St, Polokwane</Text>
+            <Text className='text-base font-rubik text-white'>Polokwane LP</Text>
+
+            <View className='flex flex-row items-center justify-between w-full'>
+                <Text className='text-white font-rubik-extrabold text-xl'>R2, 000</Text>
+                <Image source={icons.heart} className='size-5'/>
+            </View>
         </View>
     </TouchableOpacity>
   )
