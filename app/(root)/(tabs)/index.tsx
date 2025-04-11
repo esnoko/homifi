@@ -1,3 +1,4 @@
+import { Cards, FeaturedCards } from "@/components/Cards";
 import Search from "@/components/Search";
 import icons from "@/constants/icons";
 import images from "@/constants/images";
@@ -28,6 +29,8 @@ export default function Index() {
         <Text className="text-base font-rubik-bold text-primary-300">See All</Text>
       </View>
     </View>
+    <FeaturedCards/>
+    <Cards/>
   </SafeAreaView>
   );
 }

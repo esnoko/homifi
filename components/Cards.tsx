@@ -4,7 +4,7 @@ import React from 'react'
 export const FeaturedCards = () => {
   return (
     <View>
-      <Text>Cards</Text>
+      <Text>FeaturedCards</Text>
     </View>
   )
 }
