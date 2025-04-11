@@ -16,6 +16,10 @@ export const FeaturedCards = ({onPress}: Props) => {
             <Image source={icons.star} className='size-3.5'/>
             <Text className='text-xs font-rubik-bold text-primary-300 ml-1'>4.4</Text>
         </View>
+
+        <View className='flex flex-col items-start absolute bottom-5 inset-x-5'>
+            <Text className='text-xl font-rubik-extrabold text-white' numberOfLines={1}>Modern Apartment</Text>
+        </View>
     </TouchableOpacity>
   )
 }
