@@ -35,7 +35,16 @@ export default function Index() {
         <FeaturedCards />
         <FeaturedCards />
       </View>
+
+      <View className="flex flex-row items-center justify-between mt-4">
+        <Text className="text-xl font-rubik-bold text-black-300">Our Recommendation</Text>
+        <TouchableOpacity>
+        <Text className="text-base font-rubik-bold text-primary-300">See All</Text>
+        </TouchableOpacity>
+      </View>
     </View>
+
+
 
     
 
