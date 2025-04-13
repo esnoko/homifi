@@ -25,7 +25,7 @@ const Filters = () => {
               : "bg-primary-100 border border-primary-200"
           }`}
         >
-          <Text className={`text-sm ${selectedCategory === item.category ? 'text-white font-rubik-bold' : 'text-black-300 font-rubik'}`}>{item.title}</Text>
+          <Text className={`text-base ${selectedCategory === item.category ? 'text-white font-rubik-bold mt-0.5' : 'text-black-300 font-rubik'}`}>{item.title}</Text>
         </TouchableOpacity>
       ))}
     </ScrollView>
