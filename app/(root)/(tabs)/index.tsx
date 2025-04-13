@@ -42,6 +42,11 @@ export default function Index() {
         <Text className="text-base font-rubik-bold text-primary-300">See All</Text>
         </TouchableOpacity>
       </View>
+
+      <View className="flex flex-row gap-5 mt-5">
+        <Cards/>
+        <Cards/>
+      </View>
     </View>
 
 
