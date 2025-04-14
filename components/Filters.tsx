@@ -1,6 +1,6 @@
 import { View, Text, ScrollView, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
-import { useLocalSearchParams } from "expo-router";
+import { router, useLocalSearchParams } from "expo-router";
 import { categories } from "@/constants/data";
 
 const Filters = () => {
@@ -8,7 +8,15 @@ const Filters = () => {
   const [selectedCategory, setSelectedCategory] = useState(
     params.filters || "All"
   );
-  const handleCategoryPress = (category: string) => {};
+  const handleCategoryPress = (category: string) => {
+    if (category === selectedCategory) {
+      setSelectedCategory("All"); // Reset to "All" if the same category is pressed
+      router.setParams({ filters: "All" });
+      return;
+    }
+    setSelectedCategory(category);
+    router.setParams({ filters: category });
+  };
   return (
     <ScrollView
       horizontal
