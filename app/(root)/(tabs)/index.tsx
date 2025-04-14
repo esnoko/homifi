@@ -13,8 +13,12 @@ export default function Index() {
   <SafeAreaView className="bg-white h-full" >
 
     <FlatList
-      data={[1, 2, 3 , 4]}
+      data={[1, 2]}
       renderItem={({item}) => <Cards/>}
+      keyExtractor={(item) => item.toString()}
+      numColumns={2}
+      contentContainerClassName="pb-32"
+      columnWrapperClassName="flex gap-5 px-5"
       ListHeaderComponent={
         <><View className="px-5">
           <View className="flex flex-row items-center justify-between mt-5">
