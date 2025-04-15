@@ -1,4 +1,4 @@
-import { Client, Account, OAuthProvider, Avatars } from "react-native-appwrite";
+import { Client, Account, OAuthProvider, Avatars, Databases } from "react-native-appwrite";
 import * as Linking from "expo-linking";
 import { openAuthSessionAsync } from "expo-web-browser";
 
@@ -21,6 +21,7 @@ client
 
 export const avatar = new Avatars(client);
 export const account = new Account(client);
+export const databases = new Databases(client);
 
 export async function login() {
   try {
