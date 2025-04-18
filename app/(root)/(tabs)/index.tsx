@@ -5,7 +5,14 @@ import icons from "@/constants/icons";
 import { useGlobalContext } from "@/lib/global-provider";
 import seed from "@/lib/seed";
 import React from "react";
-import { Text, View, Image, TouchableOpacity, FlatList, Button } from "react-native";
+import {
+  Text,
+  View,
+  Image,
+  TouchableOpacity,
+  FlatList,
+  Button,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
@@ -13,7 +20,7 @@ export default function Index() {
 
   return (
     <SafeAreaView className="bg-white h-full">
-      <Button title="seed" onPress={seed}/>
+      <Button title="seed" onPress={seed} />
       <FlatList
         data={[1, 2, 3, 4]}
         renderItem={({ item }) => <Cards />}
@@ -28,7 +35,7 @@ export default function Index() {
               <View className="flex flex-row items-center justify-between mt-5">
                 <View className="flex flex-row items-center">
                   <Image
-                    source={{uri: user?.avatar}}
+                    source={{ uri: user?.avatar }}
                     className="size-12 rounded-full"
                   />
                   <View className="flex flex-col items-start ml-2 justify-center">
@@ -56,7 +63,7 @@ export default function Index() {
                 </TouchableOpacity>
               </View>
               <FlatList
-                data={[1, 2, 3]}
+                data={[5, 6, 7]}
                 renderItem={({ item }) => <FeaturedCards />}
                 keyExtractor={(item) => item.toString()}
                 horizontal
