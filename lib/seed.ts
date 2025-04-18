@@ -16,13 +16,13 @@ const COLLECTIONS = {
 
 const propertyTypes = [
   "House",
-  "Townhomes",
-  "Condos",
-  "Duplexes",
-  "Studios",
-  "Villa",
-  "Apartments",
-  "Others",
+  "Townhouse",
+  "Condo",
+  "Duplex",
+  "Studio",
+  "Vila",
+  "Apartment",
+  "Other",
 ];
 
 const facilities = [
