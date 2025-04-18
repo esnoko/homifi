@@ -17,12 +17,12 @@ const COLLECTIONS = {
 const propertyTypes = [
   "House",
   "Townhouse",
-  "Condo",
-  "Duplex",
-  "Studio",
-  "Vila",
-  "Apartment",
-  "Other",
+  "Condos",
+  "Duplexes",
+  "Studios",
+  "Villa",
+  "Apartments",
+  "Others",
 ];
 
 const facilities = [
